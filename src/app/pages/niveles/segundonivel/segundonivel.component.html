@@ -1,0 +1,81 @@
+<ion-content class="texturanivel">
+  <ion-button expand="block" [routerLink]="['/niveles']" class="bt2" color="danger">
+    <ion-icon name="arrow-back-sharp"></ion-icon>
+
+  </ion-button>
+
+  <ion-grid fixed >
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="4" size-lg="3" size-md="3" size-sm="12" *ngFor="let carta of cartas">
+        <ion-card class="textura2" (click)="vuelta(carta)">
+          <img *ngIf="carta.enable" [src]="carta.imagen" class="imagennivel1">
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  
+
+
+
+
+
+
+ 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    
+<!--     Agrego el Tiempo -->
+     <!-- Fila -->
+     <ion-grid fixed >
+      <!--   Columna -->
+      <ion-row class="ion-justify-content-center" >
+        
+        
+        <ion-button expand="block" color="danger" >
+          <ion-col class="ion-justify-content-center" size="auto" >
+         Intentos: {{intentos}}
+         </ion-col>
+        </ion-button>
+
+
+
+
+   <ion-button color="danger">
+
+ <ion-col class="ion-justify-content-center" size="auto">Tiempo: </ion-col>
+
+<!-- Pantallas diferentes -->
+<!-- sizeXs="12" sizeXL="4" sizeSm="10" sizeMd="6" sizeLg="4" -->
+     <ion-col size="auto" >
+
+       <div >
+      0{{tiempo.minutos}}
+     </div>
+     </ion-col>
+
+     <ion-col  size="auto">
+     <div *ngIf="tiempo.segundos <10">
+   
+       0{{tiempo.segundos}}
+  
+     </div>
+    
+     <div *ngIf="tiempo.segundos >=10">
+       {{tiempo.segundos}}
+     </div>
+
+     </ion-col>
+
+ 
+
+
+   </ion-button>
+
+ </ion-row>
+</ion-grid>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,72 @@
+<ion-content class="texturanivel">
+
+
+  <ion-button expand="block" [routerLink]="['/plantilla']" class="bt2" color="tertiary">
+    <ion-icon name="home-sharp"></ion-icon>
+  </ion-button>
+
+ <ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto"></ion-col>
+    <img src="assets/img/entrar.png"/>
+        
+    
+  </ion-row>
+ </ion-grid>
+
+
+  
+   
+   
+<ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+
+          <ion-card-header>
+            
+            <ion-card-title style="text-align:center;">Login</ion-card-title>
+        
+          </ion-card-header>
+        </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+  <ion-item>
+    <ion-label position="floating"> Ingresa tu correo</ion-label>
+    <ion-input type="string" [(ngModel)]="this.credenciales.correo"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label position="floating">Ingresa tu contraseña (6-digitos)</ion-label>
+    <ion-input type="password" minlength="6" [(ngModel)]="this.credenciales.password"></ion-input>
+   
+<!--     <ion-button (click)="mostrar()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button> -->
+
+  </ion-item>
+
+   <ion-item>
+  <ion-label>¿No tienes un usuario?</ion-label>
+  <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']" >
+      Regístrate
+      </ion-button>
+  </ion-buttons>
+</ion-item>
+
+<ion-grid >
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto">
+
+      <ion-button (click)="login()" expand="block" shape="round"  class="btn-entrar" >
+        Entrar
+      </ion-button>
+      
+    </ion-col>
+    </ion-row>
+</ion-grid>
+
+
+</ion-content> 

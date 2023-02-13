@@ -1,0 +1,86 @@
+<ion-content class="texturanivel">
+  <ion-button expand="block" [routerLink]="['/plantilla']" class="bt2" color="tertiary">
+    <ion-icon name="home-sharp"></ion-icon>
+  </ion-button>
+
+<ion-grid >
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto">
+
+      <img src="assets/img/robotregistro.png" class="memoria"/>
+            
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+
+
+      <ion-card-title class="logo" style="text-align: center;">
+    Regístrate
+    
+    </ion-card-title>
+    <ion-list>
+    </ion-list>
+  
+
+    <ion-content>
+
+      <ion-item>
+          <ion-label position="floating" >Ingresa tu correo</ion-label>
+          <ion-input [(ngModel)]="newUser.correo"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="newUser.nombre"></ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label position="floating" >Telefono</ion-label>
+      <ion-input [(ngModel)]="newUser.telefono"></ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label position="floating" >Contraseña</ion-label>
+      <ion-input name="password" placeholder="Password" [type]="showPassword ? 'text' : 'password'" [(ngModel)]="newUser.password" ></ion-input>
+      <ion-icon slot="end" [name]="passwordToggleIcon"(click)="togglePassword()"> </ion-icon>
+      
+  </ion-item>
+    
+      
+      <ion-item>
+        <ion-label position="floating" >Repite Contraseña (minimo 6 caracteres)</ion-label>
+        <ion-input type="password" [(ngModel)]="repassword"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" >Repite Contraseña </ion-label>
+      <ion-input name="password" placeholder="Password"  [type]="showPassword ? 'text' : 'password'" [(ngModel)]="repassword"></ion-input>
+      <ion-icon slot="end" [name]="passwordToggleIcon"(click)="togglePassword()" background="white"> </ion-icon>
+
+  </ion-item>
+
+    <ion-grid >
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+
+          <ion-button (click)="registrarse()" expand="block"  shape="round" >
+            Registrarse
+          </ion-button>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+      <ion-item>
+          <ion-label>¿Ya tienes un usuario?</ion-label>
+          <ion-buttons slot="end">
+              <ion-button [routerLink]="['/entrar']" >
+              Ingresar
+              </ion-button>
+          </ion-buttons>
+      </ion-item>
+      
+</ion-content> 

@@ -1,0 +1,72 @@
+
+<ion-content class="inter">
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear una Api</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+  <ion-card>
+    
+    
+    
+<!--     <ion-item>
+      <ion-label>Nota 1: </ion-label>
+      <ion-input [(ngModel)]="data.nota1"  type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nota 2: </ion-label>
+      <ion-input [(ngModel)]="data.nota2"  type="number"></ion-input>
+    </ion-item> 
+    <ion-item>
+
+      <ion-label>Nota 3: </ion-label>
+      <ion-input [(ngModel)]="data.nota3"  type="number"></ion-input>
+    </ion-item> 
+    
+    <ion-button (click)="getsuma()" expand="block" color="danger">
+      Suma Servidor
+    </ion-button>
+    <ion-button (click)="getsumaCliente()" expand="block" color="success">
+      Sumar Cliente
+     </ion-button> -->
+
+    <ion-button (click)="guardarLed()" expand="block" color="success">
+      Prender led
+     </ion-button>
+    <ion-button (click)="apagarLed()" expand="block" color="danger">
+      Apagar led
+     </ion-button>
+
+ <ng-container *ngIf="respuesta">
+<ion-item>
+  <ion-label> Promedio es : {{respuesta.respuesta}}
+    <p>estado: {{respuesta.estado}}</p>
+  </ion-label>
+</ion-item> 
+
+</ng-container>  
+
+</ion-card>
+
+<ion-card>
+
+  
+  estadoLed
+  {{stateled}}
+
+  
+</ion-card>
+
+
+
+
+</ion-content>
+
+
+
+

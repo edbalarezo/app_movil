@@ -1,0 +1,84 @@
+<ion-content class="texturaapp">
+
+
+  <ion-grid >
+    <ion-row class="ion-justify-content-center">
+     <ion-col size="auto">
+
+
+       <img src="assets/img/opciones-img.png">
+      
+     </ion-col>
+    
+    </ion-row>
+  </ion-grid>
+  
+   <ion-grid >
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="auto">
+
+        <ion-card-title class="logo" style="text-align: center;" color="black">
+          Diviértete con el aprendizaje
+        
+        </ion-card-title>
+      </ion-col>
+      
+    </ion-row>
+
+   </ion-grid>
+  
+   
+
+
+
+
+        <div style="display: flex;">
+
+          <ion-grid >
+            <ion-row class="ion-justify-content-center"> 
+              <ion-col size="auto">
+
+                <ion-button class="opciones" size="default" expand="block" color="tertiary" [routerLink]="['/home']"  >
+                                    Home
+                <ion-icon name="home-sharp" slot="start"></ion-icon>
+                </ion-button>
+              
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+          <ion-grid >
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="auto">
+
+                <ion-button class="opciones" size="default" expand="block" color="success"  [routerLink]="['/actividades']"  >
+                                Actividades
+                <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+                </ion-button>
+                  
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+         </div>
+
+
+<ion-grid >
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="auto">
+
+      <ion-button class="regreso"  expand="block" color="dark" (click)="logout()"  >
+        Salir 
+        <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+      </ion-button>
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+
+
+
+
+  
+</ion-content>

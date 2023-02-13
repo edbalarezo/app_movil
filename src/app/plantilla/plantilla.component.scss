@@ -1,0 +1,72 @@
+
+.textura{
+  --background:url('/assets/img/fondo-1.png')0 0/100% 100% no-repeat;
+}
+.btn_1{
+  border-radius: 150px;
+  width: 350px;
+  margin-top: 20px; 
+ 
+}
+.btn_2{
+  border-radius: 120px;
+  width: 350px;
+  margin-top: 173px;
+  color: black;
+}
+.map1{
+    margin-top: px;
+    width: 350px;
+    margin: 15px;
+    margin-top: 30px;
+    }
+    .logo{
+        color: #000000;
+    }
+    .logo1{
+        color: red;
+
+        
+    }
+.facebook1{
+    width: 150px;
+    margin-top: 20px;
+    margin-block-start: 20px
+    ;
+    
+}
+.redes{
+    width: 120px;
+}
+
+
+ion-fab-button {
+  margin: 19px;    
+
+}
+.fondo{
+    margin:20px;
+    margin-top: 30px;
+}
+.img1{
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation: rotate 6s infinite ;
+  }
+  
+  @keyframes rotate {
+    from {
+    
+      width: 300%;
+      transform: rotateY(369deg) ;
+      
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
